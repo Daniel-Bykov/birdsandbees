@@ -164,6 +164,9 @@ h5 {
   top: 0;
   transition: 0.2s;
   overflow: hidden;
+  display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 
   &:hover {
     width: 300px;
@@ -198,8 +201,7 @@ h5 {
 
     &--social {
       position: relative;
-      top: 86px;
-      margin-bottom: 35px;
+  
       white-space: nowrap;
     }
   }
@@ -214,9 +216,13 @@ h5 {
 
   &__box-2 {
     position: relative;
-    top: 86px;
-  }
+    height: 105px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 25px;
 }
+  }
 
 .left-menu-mobile {
   visibility: hidden;
@@ -344,7 +350,7 @@ button {
 }
 
 .header {
-  margin-bottom: 150px;
+  margin-bottom: 15px;
 
   &__top {
     display: flex;
@@ -402,10 +408,14 @@ button {
   }
 
   &__phone-numbers {
+    margin-right: 20px;
     @media (max-width: 1290px) {
       display: none;
+      
     }
   }
+
+
 }
 
 .header-section {
@@ -493,7 +503,7 @@ button {
   }
 
   &-main {
-    min-height: 100vh;
+    height: 100vh;
     padding-top: 40px;
 
     @media (max-width: 1290px) {
@@ -584,10 +594,11 @@ button {
 }
 
 .place-category {
+  margin-bottom: 50px;
   &__navi {
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: 11%;
+    margin-bottom: 50px;
   }
 
   &__slider {
@@ -653,11 +664,33 @@ button {
   @media (max-width: 1290px) {
     padding: 0 15px;
   }
+
+ &__header{
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 0 20px;
+  position: relative;
+  height: inherit;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: inherit;
+
+  @media (max-width: 1290px) {
+    padding: 0 15px;
+  }
+ }
 }
 
 .content-wrapper {
   &-flex {
     display: flex;
+
+    &__header{
+      @media (max-width: 1290px) {
+        display: none;
+      }
+    }
   }
 
   &-flex-slider {
