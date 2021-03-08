@@ -12,39 +12,82 @@
 
 <body>
 
+  <div class="main-container">
 
+    <div class="left-menu-mobile">
 
-  <div class="main-container" style="background-color: #F9F9F9;">
+      <button id="close-menu" style="left: 0; width: 15px; margin-bottom: 20px;"><img
+          src="./assets/img/left_menu_mobile/cross.svg" alt=""></button>
+      <div class="left-menu-mobile__navi">
+        <a href="#" class="left-menu-mobile__navi-element">Меню/доставка</a>
+        <a href="#" class="left-menu-mobile__navi-element">Банкеты</a>
+        <a href="#" class="left-menu-mobile__navi-element">Свадьбы</a>
+        <a href="#" class="left-menu-mobile__navi-element">Для детей</a>
+        <a href="#" class="left-menu-mobile__navi-element">Фотоотчеты</a>
+        <a href="#" class="left-menu-mobile__navi-element">Торты</a>
+        <a href="#" class="left-menu-mobile__navi-element">Отзывы</a>
+        <a href="#" class="left-menu-mobile__navi-element">Контакты</a>
+      </div>
+      <div class="left-menu-mobile__line"></div>
+      <div class="left-menu-mobile__order">
+        <div class="phone-numbers" style="color: black; margin-bottom: 20px;">
+          <p class="phone-numbers__number--head">7 (925) 225-38-38</p>
+          <p class="phone-numbers__number--bottom">7 (495) 225-38-38</p>
+        </div>
 
-    <section class="section-container"
+        <div class="left-menu-mobile__button">
+          <a href="#" class="button-link" style="color: black">Забронировать</a>
+        </div>
+      </div>
+      <div class="left-menu-mobile__line"></div>
+      <div class="left-menu-mobile__logo">
+        <img src="./assets/img/left_menu_mobile/uds-game.svg" alt="">
+        <img src="./assets/img/left_menu_mobile/3d.svg" alt="">
+      </div>
+
+    </div>
+
+    <div class="section-container-main"
       style="background-image: url('./assets/img/backgrond.png');background-size: cover;">
       <div class="content-container">
-        <div class="main-menu">
-
-          <section class="main-menu--section-1">
-            <div class="wrap">
-              <div class="phone-numbers">
-                <div class="phone-numbers--head">7 (925) 225-38-38</div>
-                <div class="phone-numbers--bottom">7 (495) 225-38-38</div>
+        <header class="header">
+          <div class="header__top">
+            <div class="header__phone-numbers">
+              <div class="content-wrapper-flex">
+                <div class="phone-numbers">
+                  <p class="phone-numbers__number--head">7 (925) 225-38-38</p>
+                  <p class="phone-numbers__number--bottom">7 (495) 225-38-38</p>
+                </div>
+                <img src="./assets/img/main_menu_ico/title/duck_logo.svg" alt="" class="header__logo">
               </div>
-              <img src="./assets/img/main_menu_ico/title/duck_logo.svg" alt="" class="uds-logo">
             </div>
 
-            <img src="./assets/img/main_menu_ico/title/logo.svg" alt="">
+            <div class="header__left-menu">
+              <button> <img src="./assets/img/main_menu_ico/title/burger.svg" alt="" class="left-menu-mobile-button">
+              </button>
+            </div>
+
+            <div class="header__logotype">
+              <a href="#" class=""><img src="./assets/img/main_menu_ico/title/logo.svg" alt="" class="logo"></a>
+            </div>
 
 
-            <div class="wrap"> <img src="./assets/img/main_menu_ico/title/3d_logo.svg" alt="" class="d3_logo">
 
-              <button class="bascet-box">
-                <div class="bascet"><img src="./assets/img/main_menu_ico/basket.svg" alt="Корзина"></div>
-                <div class="counter_back"><img src="./assets/img/main_menu_ico/counter.svg" alt="Счетчик">
-                  <div class="counter">1</div>
+            <div class="content-wrapper-space-between media">
+              <img src="./assets/img/main_menu_ico/title/3d_logo.svg" alt="" class="header__logo">
+
+              <button class="header__basket-box">
+                <img src="./assets/img/main_menu_ico/basket.svg" alt="Корзина">
+                <div class="counter__back"><img src="./assets/img/main_menu_ico/counter.svg" alt="Счетчик">
+                  <div class="counter">10000</div>
                 </div>
               </button>
-              <a href="#" class="button button--reserv">Забронировать</a>
+              <div class="header__button">
+                <a href="#" class="button-link">Забронировать</a>
+              </div>
             </div>
-          </section>
-          <section class="main-menu--section-2">
+          </div>
+          <div class="header__navi">
             <a href="#" class="menu-link">Меню/доставка</a>
             <a href="#" class="menu-link">Банкеты</a>
             <a href="#" class="menu-link">Свадьбы</a>
@@ -53,101 +96,117 @@
             <a href="#" class="menu-link">Торты</a>
             <a href="#" class="menu-link">Отзывы</a>
             <a href="#" class="menu-link">Контакты</a>
-          </section>
-        </div>
+          </div>
+        </header>
 
-        <div class="main-menu--category-info">
-          <p class="name_category">Ресторан</p>
-          <p class="about_category">Идеальное место для вашего праздника!</p>
-          <div class="wrap wrap__margin-bottom">
-            <div class="work">
-              <p class="work__day">ПН — ЧТ</p>
-              <p class="work__time">10:00 — 00:00</p>
+
+        <section class="place-info">
+
+          <h1 class="place-info__name">Ресторан</h1>
+          <p class="place-info__about">Идеальное место для вашего праздника!</p>
+
+          <div class="place-info__work-days">
+            <div class="work-time mg-rt-40">
+              <p class="work-time__day ">ПН — ЧТ</p>
+              <p class="work-time__time">10:00 — 00:00</p>
             </div>
 
-            <div class="work">
-              <p class="work__day">ПТ — СБ</p>
-              <p class="work__time">Круглосуточно</p>
+            <div class="work-time">
+              <p class="work-time__day">ПТ — СБ</p>
+              <p class="work-time__time">Круглосуточно</p>
             </div>
           </div>
 
-          <div class="wrap wrap__margin-bottom">
-            <a href="#" class="button button--reserv-yellow">Забронировать</a>
-            <a href="#" class="button button--detalied">Подробнее</a>
+          <div class="place-info__actions">
+            <a href="#" class="button button--yellow place-info__button">Забронировать</a>
+            <a href="#" class="button button--opacity">Подробнее</a>
           </div>
 
-          <div class="wrap wrap__margin-bottom">
+
+        </section>
+        <div class="place-category">
+          <nav class="place-category__navi">
             <button><img src="./assets/img/main_menu_ico/btn_navi.svg" alt=""></button>
-            <button class="navi_rev"><img src="./assets/img/main_menu_ico/btn_navi.svg" alt=""></button>
-          </div>
-        </div>
+            <button class="navi-right mg-rt-20"><img src="./assets/img/main_menu_ico/btn_navi.svg" alt=""></button>
+          </nav>
 
-        <div class="main-menu--category-switch">
-          <button class="bot_but"><img src="./assets/img/main_menu_ico/bottom_navi/serv.svg" alt=""></button>
-          <button class="bot_but"><img src="./assets/img/main_menu_ico/bottom_navi/serv1.svg" alt=""></button>
-          <button class="bot_but"><img src="./assets/img/main_menu_ico/bottom_navi/serv2.svg" alt=""></button>
-          <button class="bot_but"><img src="./assets/img/main_menu_ico/bottom_navi/serv4.svg" alt=""></button>
-          <button class="bot_but"><img src="./assets/img/main_menu_ico/bottom_navi/serv5.svg" alt=""></button>
-          <button class="bot_but"><img src="./assets/img/main_menu_ico/bottom_navi/serv6.svg" alt=""></button>
+          <div class="place-category__slider">
+            <button class="category-selector mg-rt-30"><img src="./assets/img/main_menu_ico/bottom_navi/serv.svg"
+                alt=""></button>
+            <button class="category-selector mg-rt-30"><img src="./assets/img/main_menu_ico/bottom_navi/serv1.svg"
+                alt=""></button>
+            <button class="category-selector mg-rt-30"><img src="./assets/img/main_menu_ico/bottom_navi/serv2.svg"
+                alt=""></button>
+            <button class="category-selector mg-rt-30"><img src="./assets/img/main_menu_ico/bottom_navi/serv4.svg"
+                alt=""></button>
+            <button class="category-selector mg-rt-30"><img src="./assets/img/main_menu_ico/bottom_navi/serv5.svg"
+                alt=""></button>
+            <button class="category-selector mg-rt-30"><img src="./assets/img/main_menu_ico/bottom_navi/serv6.svg"
+                alt=""></button>
+          </div>
 
         </div>
       </div>
+    </div>
 
+    <section class="section-container-events">
+      <div class="content-container">
 
+        <header class="header-section__events">
+          <h3>Мероприятия у нас</h3>
 
-    </section>
-
-
-    <section class="section-container--auto-height margin--bottom-60">
-      <div class="content-container content-container__events">
-
-        <div class="main-menu--section-2">
-          <p class="category-title">Мероприятия у нас</p>
-
-          <div class="wrap wrap__navi-button">
+          <nav>
             <button><img src="./assets/img/events/navi-black.svg" alt=""></button>
-            <button class="navi_rev"><img src="./assets/img/events/navi-black.svg" alt=""></button>
-          </div>
+            <button class="navi-right mg-rt-20"><img src="./assets/img/events/navi-black.svg" alt=""></button>
+          </nav>
 
-        </div>
+        </header>
 
-        <div class="wrap margin--bottom-40">
-          <div class="wrap--column">
-            <img src="./assets/img/events/Rectangle1.jpg" alt="" class="preview-pic--events">
-            <div class="wrap">
-              <a href="#" class="wrap">
-                <p class="events-name">Корпоративы</p> <img src="./assets/img/events/name-navi.svg" alt=""
-                  class="navi-name">
+        <div class="slider__events">
+          <div class="content-wrapper-column">
+
+            <div class="slide__pic-events">
+              <img src="./assets/img/events/Rectangle1.jpg" alt="" class="preview-pic-events">
+            </div>
+
+            <div class="content-wrapper">
+              <a href="#" class="content-wrapper-flex">
+                <h4>Корпоративы</h4>
+                <img src="./assets/img/events/name-navi.svg" alt="" class="arrow">
               </a>
             </div>
           </div>
 
-          <div class="wrap--column">
-            <img src="./assets/img/events/Rectangle2.jpg" alt="" class="preview-pic--events">
-            <div class="wrap">
-              <a href="#" class="wrap">
-                <p class="events-name">Выпускные</p> <img src="./assets/img/events/name-navi.svg" alt=""
-                  class="navi-name">
+          <div class="content-wrapper-column">
+            <div class="slide__pic-events">
+              <img src="./assets/img/events/Rectangle2.jpg" alt="" class="preview-pic-events">
+            </div>
+            <div class="content-wrapper">
+              <a href="#" class="content-wrapper-flex">
+                <p class="events-name">Выпускные</p> <img src="./assets/img/events/name-navi.svg" alt="" class="arrow">
               </a>
             </div>
           </div>
 
-          <div class="wrap--column">
-            <img src="./assets/img/events/Rectangle3.jpg" alt="" class="preview-pic--events">
-            <div class="wrap">
-              <a href="#" class="wrap">
-                <p class="events-name">Свадьбы</p> <img src="./assets/img/events/name-navi.svg" alt=""
-                  class="navi-name">
+          <div class="content-wrapper-column">
+            <div class="slide__pic-events">
+              <img src="./assets/img/events/Rectangle3.jpg" alt="" class="preview-pic-events">
+            </div>
+            <div class="content-wrapper">
+              <a href="#" class="content-wrapper-flex">
+                <p class="events-name">Свадьбы</p> <img src="./assets/img/events/name-navi.svg" alt="" class="arrow">
               </a>
             </div>
           </div>
 
-          <div class="wrap--column">
-            <img src="./assets/img/events/Rectangle4.jpg" alt="" class="preview-pic--events">
-            <div class="wrap">
-              <a href="#" class="wrap">
+          <div class="content-wrapper-column">
+            <div class="slide__pic-events">
+              <img src="./assets/img/events/Rectangle4.jpg" alt="" class="preview-pic-events">
+            </div>
+            <div class="content-wrapper">
+              <a href="#" class="content-wrapper-flex">
                 <p class="events-name">Baby Shower</p> <img src="./assets/img/events/name-navi.svg" alt=""
-                  class="navi-name">
+                  class="arrow">
               </a>
             </div>
           </div>
@@ -162,130 +221,162 @@
           <div class="scroll--events"> <img src="./assets/img/events/events-scroll.svg" alt=""> </div>
 
         </div>
+      </div>
     </section>
 
-    <section class="section-container--bottom-margin-0 back--white  padding--bottom-120">
+    <section class="section-container">
       <div class="content-container">
-        <div class="main-menu--section-2">
-          <p class="category-title">Наши залы</p>
-        </div>
 
-        <div class="wrap margin--bottom-15">
-          <p class="hall-title">Все</p>
-          <p class="hall-title">Банкетные</p>
-          <p class="hall-title">Общие</p>
-          <p class="hall-title">Индивидуальные</p>
-          <p class="hall-title">Караоке</p>
-        </div>
+        <header class="header-section__halls">
+          <h2 style="margin-bottom: 45px;">Наши залы</h2>
 
 
-        <div class="scroll-line margin--bottom-55">
-          <img src="./assets/img/hall/scroll-line.svg" alt="">
+          <div class="content-wrapper-column  mg-bt-15">
 
-          <div class="scroll--hall"> <img src="./assets/img/hall/scroll.svg" alt="">
+            <div class="content-wrapper-flex-slider">
+
+
+              <div class="content-wrapper-column mg-rt-30">
+                <button id="switch-all" class="hall-title">Все
+                </button>
+                <div class="scroll-marker"></div>
+              </div>
+
+
+              <div class="content-wrapper-column mg-rt-30">
+                <button id="switch-banquet" class="hall-title">Банкетные
+                </button>
+                <div class="scroll-marker"></div>
+              </div>
+
+
+              <div class="content-wrapper-column mg-rt-30">
+                <button id="switch-common" class="hall-title">Общие
+                </button>
+                <div class="scroll-marker"></div>
+              </div>
+
+
+              <div class="content-wrapper-column mg-rt-30">
+                <button id="switch-individual" class="hall-title">Индивидуальные
+                </button>
+                <div class="scroll-marker"></div>
+              </div>
+
+              <div class="content-wrapper-column mg-rt-30">
+                <button id="switch-caraoke" class="hall-title">Караоке
+                </button>
+                <div class="scroll-marker"></div>
+              </div>
+            </div>
           </div>
-        </div>
+        </header>
 
-
-        <div class="wrap__flex-wrap">
-          <div class="hall-gallery-elemet" style="background-image:url(./assets/img/hall/hall1.jpg)">
-            <p class="guest-quantity" style="background-image: url(./assets/img/hall/guests\ quantity.svg);">ДО 160
+        <div class="hall-gallery">
+          <a id="banquet" href="" class="hall" style="background-image:url(./assets/img/hall/hall1.jpg)">
+            <p class="hall__guest-quantity" style="background-image: url(./assets/img/hall/guests\ quantity.svg);">ДО
+              160
               гостей</p>
-            <p class="hall-elemet-name margin--bottom-10">Зал Большой банкетный</p>
-            <p class="hall-elemet-description ">Роскошный банкетный зал в мягком классическом дизайне.</p>
-          </div>
+            <p class="hall__name">Зал Большой банкетный</p>
+            <p class="hall__description ">Роскошный банкетный зал в мягком классическом дизайне.</p>
+          </a>
 
-          <div class="hall-gallery-elemet" style="background-image:url(./assets/img/hall/hall2.jpg)">
-            <p class="guest-quantity" style="background-image: url(./assets/img/hall/guests\ quantity.svg);">ДО 12
+          <a id="individual" href="" class="hall" style="background-image:url(./assets/img/hall/hall2.jpg)">
+            <p class="hall__guest-quantity" style="background-image: url(./assets/img/hall/guests\ quantity.svg);">ДО 12
               гостей</p>
-            <p class="hall-elemet-name margin--bottom-10">Зал Золотая Комната</p>
-            <p class="hall-elemet-description ">Золотая комната в золотом убранстве и круглым столом на 12 человек.</p>
-          </div>
+            <p class="hall__name">Зал Золотая Комната</p>
+            <p class="hall__description ">Золотая комната в золотом убранстве и круглым столом на 12 человек.</p>
 
-          <div class="hall-gallery-elemet" style="background-image:url(./assets/img/hall/hall3.jpg)">
-            <p class="guest-quantity" style="background-image: url(./assets/img/hall/guests\ quantity.svg);">ДО 100
+          </a>
+          <a id="common" href="" class="hall" style="background-image:url(./assets/img/hall/hall3.jpg)">
+            <p class="hall__guest-quantity" style="background-image: url(./assets/img/hall/guests\ quantity.svg);">ДО
+              100
               гостей</p>
-            <p class="hall-elemet-name margin--bottom-10">Зал Оранжерея</p>
-            <p class="hall-elemet-description ">Настоящая оранжерея с панорамными окнами, мягкими диванами.</p>
-          </div>
+            <p class="hall__name">Зал Оранжерея</p>
+            <p class="hall__description ">Настоящая оранжерея с панорамными окнами, мягкими диванами.</p>
 
-          <div class="hall-gallery-elemet" style="background-image:url(./assets/img/hall/hall4.jpg)">
-            <p class="guest-quantity" style="background-image: url(./assets/img/hall/guests\ quantity.svg);">ДО 100
+          </a>
+          <a id="common" href="" class="hall" style="background-image:url(./assets/img/hall/hall4.jpg)">
+            <p class="hall__guest-quantity" style="background-image: url(./assets/img/hall/guests\ quantity.svg);">ДО
+              100
               гостей</p>
-            <p class="hall-elemet-name margin--bottom-10">Зал Гостиная</p>
-            <p class="hall-elemet-description ">Оригинальное по дизайну пространство со стеклянной стеной в сторону
+            <p class="hall__name">Зал Гостиная</p>
+            <p class="hall__description ">Оригинальное по дизайну пространство со стеклянной стеной в сторону
               бассейна.</p>
-          </div>
+          </a>
 
-          <div class="hall-gallery-elemet" style="background-image:url(./assets/img/hall/hall5.jpg)">
-            <p class="guest-quantity" style="background-image: url(./assets/img/hall/guests\ quantity.svg);">ДО 30
+          <a id="individual" href="" class="hall" style="background-image:url(./assets/img/hall/hall5.jpg)">
+            <p class="hall__guest-quantity" style="background-image: url(./assets/img/hall/guests\ quantity.svg);">ДО 30
               гостей</p>
-            <p class="hall-elemet-name margin--bottom-10">Зал Лофт</p>
-            <p class="hall-elemet-description ">Зал в модном стиле лофт для индивидуальных мероприятий.</p>
-          </div>
+            <p class="hall__name">Зал Лофт</p>
+            <p class="hall__description ">Зал в модном стиле лофт для индивидуальных мероприятий.</p>
 
+          </a>
 
-          <div class="hall-gallery-elemet" style="background-image:url(./assets/img/hall/hall6.jpg)">
-            <p class="guest-quantity" style="background-image: url(./assets/img/hall/guests\ quantity.svg);">ДО 40
+          <a id="caraoke" href="" class="hall" style="background-image:url(./assets/img/hall/hall6.jpg)">
+            <p class="hall__guest-quantity" style="background-image: url(./assets/img/hall/guests\ quantity.svg);">ДО 40
               гостей</p>
-            <p class="hall-elemet-name margin--bottom-10">Караоке зал «Гнездо» </p>
-            <p class="hall-elemet-description ">Роскошный деревянный интерьер в стиле австрийского шале.</p>
-          </div>
+            <p class="hall__name">Караоке зал «Гнездо» </p>
+            <p class="hall__description ">Роскошный деревянный интерьер в стиле австрийского шале.</p>
 
-          <div class="hall-gallery-elemet" style="background-image:url(./assets/img/hall/hall7.jpg)">
-            <p class="guest-quantity" style="background-image: url(./assets/img/hall/guests\ quantity.svg);">ДО 20
+          </a>
+          <a id="caraoke" href="" class="hall" style="background-image:url(./assets/img/hall/hall7.jpg)">
+            <p class="hall__guest-quantity" style="background-image: url(./assets/img/hall/guests\ quantity.svg);">ДО 20
               гостей</p>
-            <p class="hall-elemet-name margin--bottom-10">Караоке зал «Дупло» </p>
-            <p class="hall-elemet-description ">Роскошный деревянный интерьер в стиле австрийского шале.</p>
-          </div>
+            <p class="hall__name">Караоке зал «Дупло» </p>
+            <p class="hall__description ">Роскошный деревянный интерьер в стиле австрийского шале.</p>
 
-          <div class="hall-gallery-elemet" style="background-image:url(./assets/img/hall/hall8.jpg)">
-            <p class="guest-quantity" style="background-image: url(./assets/img/hall/guests\ quantity.svg);">ДО 50
+          </a>
+          <a id="caraoke" href="" class="hall" style="background-image:url(./assets/img/hall/hall8.jpg)">
+            <p class="hall__guest-quantity" style="background-image: url(./assets/img/hall/guests\ quantity.svg);">ДО 50
               гостей</p>
-            <p class="hall-elemet-name margin--bottom-10">Dance караоке-бар «Какаду»</p>
-            <p class="hall-elemet-description ">Модный стильный фьюжен дизайн.</p>
-          </div>
+            <p class="hall__name">Dance караоке-бар «Какаду»</p>
+            <p class="hall__description">Модный стильный фьюжен дизайн.</p>
 
+          </a>
         </div>
 
     </section>
 
 
-    <section class="section-container--auto-height margin--bottom-0"
-      style="background-image: url(./assets/img/delivery/back-food.png); background-color: #E3BF77;background-size: cover ">
+    <section class="section-container-delivery">
 
       <div class="content-container">
 
-        <div class="wrap--column--delivery-style">
-          <p class="text--delivery margin--bottom-30">Доставка</p>
-          <p class="about_category">С другой стороны дальнейшее развитие различных форм деятельности позволяет оценить
+        <div class="delivery">
+          <h5>Доставка</h5>
+          <p class="delivery__description">С другой стороны дальнейшее развитие различных форм деятельности позволяет
+            оценить
             значение форм развития. </p>
 
-          <div class="wrap"> <button><a href="#" class="button button--reserv-white">Посмотреть меню</a></button>
+          <div class="content-wrapper"> <button><a href="#" class="button button--white" style="border:none">Посмотреть
+                меню</a></button>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="section-container--auto-height margin--bottom-0 back--white">
+    <section class="section-container">
       <div class="content-container">
-        <div class="main-menu--section-2 margin--bottom-50">
-          <p class="category-title margin--bottom-0">Последние фотоотчеты</p>
-          <div class="wrap wrap__navi-button">
-            <button><a href="#" class="button button--reserv-white-text-white">Все фотоотчеты</a></button>
-          </div>
 
+        <div class="header-section__photo-rep">
+
+          <h2>Последние фотоотчеты</h2>
+          <button class="button-wrap__photo-rep-desk"><a href="#" class="button button--white text-black mg">Все
+              фотоотчеты</a></button>
         </div>
 
 
-        <div class="wrap">
+        <div class="content-wrapper-flex">
+
+
 
           <a href="#" class="">
-            <div class="preview-pic--photo-report"
+            <div class="preview-pic-photo-report"
               style="background-image:url(./assets/img/photo-report/Rectangle1.jpg)">
 
               <div class="box-report">
-                <p class="report-date margin--bottom-5">31 мая</p>
+                <p class="report-date mg-bt-5">31 мая</p>
                 <p class="report-name">День рождения Софии в стиле
                   Гарри Поттера!</p>
               </div>
@@ -293,22 +384,22 @@
           </a>
 
           <a href="#" class="">
-            <div class="preview-pic--photo-report"
+            <div class="preview-pic-photo-report"
               style="background-image:url(./assets/img/photo-report/Rectangle2.jpg)">
 
               <div class="box-report">
-                <p class="report-date margin--bottom-5">25 мая</p>
+                <p class="report-date mg-bt-5">25 мая</p>
                 <p class="report-name">Выпускной начальной школы</p>
               </div>
             </div>
           </a>
 
           <a href="#" class="">
-            <div class="preview-pic--photo-report"
+            <div class="preview-pic-photo-report"
               style="background-image:url(./assets/img/photo-report/Rectangle3.jpg)">
 
               <div class="box-report">
-                <p class="report-date margin--bottom-5">9 мая</p>
+                <p class="report-date mg-bt-5">9 мая</p>
                 <p class="report-name">Праздник Дня Победы</p>
               </div>
             </div>
@@ -317,66 +408,78 @@
 
         </div>
 
+        <div class="button-wrap__photo-rep-mob">
+          <button><a href="#" class="button button--white text-black mg">Все фотоотчеты</a></button>
+        </div>
+
 
       </div>
     </section>
 
-    <section class="bottom-site section-container--auto-height" style="background-color:  #2D2D2D;">
+    <section class="section-container-bottom">
       <div class="content-container">
-        <div class="wrap wrap--footer ">
-          <div class="wrap margin--right-90 flex--start"><img src="./assets/img/main_menu_ico/title/logo.svg" alt=""></div>
 
-          <div class="wrap--column margin--right-115">
-            <a href="#" class="button button--reserv margin--bottom-30">Забронировать</a>
-            <a href="#" class="wrap">
-              <img src="./assets/img/footer/call.svg" alt="" class="margin--right-15">
+        <div class="pre-footer">
+          <div class="pre-footer__logo">
+            <img src="./assets/img/main_menu_ico/title/logo.svg" alt="">
+          </div>
+
+          <div class="pre-footer__buttons">
+            <a href="#" class="button mg-bt-30">Забронировать</a>
+
+            <a href="#" class="content-wrapper-flex">
+              <img src="./assets/img/footer/call.svg" alt="" class="mg-rt-15">
               <p class="call-order-text">Заказать звонок</p>
             </a>
           </div>
 
-          <div class="wrap--column margin--right-170 flex--shrink-0">
-            <p class="phone-numbers--head color--white">7 (925) 225-38-38</p>
-            <p class="phone-numbers--bottom color--white margin--bottom-30">7 (495) 225-38-38</p>
-            
-            <div class="wrap">
-              <a href="#" class="margin--right-25"><img src="./assets/img/footer/vk.svg" alt="VK"></a>
-              <a href="#" class="margin--right-25"><img src="./assets/img/footer/inst.svg" alt="VK"></a>
-              <a href="#" class=""><img src="./assets/img/footer/Facebook.svg" alt="VK"></a>
+          <!-- <div class="content-wrapper-column mg-rt-170 flex-shrink-0"> -->
+
+          <div class="pre-footer__phone-numbers">
+
+            <div class="phone-numbers">
+              <p class="phone-numbers__number--head">7 (925) 225-38-38</p>
+              <p class="phone-numbers__number--bottom mg-bt-30">7 (495) 225-38-38</p>
             </div>
+
+            <div class="content-wrapper-space-between">
+              <a href="#"><img src="./assets/img/footer/vk.svg" alt=""></a>
+              <a href="#"><img src="./assets/img/footer/inst.svg" alt=""></a>
+              <a href="#"><img src="./assets/img/footer/Facebook.svg" alt=""></a>
+            </div>
+
           </div>
-         
-          <div class="wrap--column ">
-            <p class="text--distribution color--white margin--bottom-30">Подпишитесь на рассылку Птицы и Пчёлы и будьте в курсе всех новостей и событий</p>
-            <div class="wrap wrap__space-between">
-            <p class ="text--gray">E-mail</p>
-            <button><img src="./assets/img/footer/mail-btn.svg" alt="" class="mail-button"></button></div>
+
+          <div class="pre-footer__subscribe ">
+            <p class="text-distribution color--white mg-bt-30">Подпишитесь на рассылку Птицы и Пчёлы и будьте в курсе
+              всех новостей и событий</p>
+            <div class="subscribe-input">
+              <p class="text-gray">E-mail:</p>
+              <button><img src="./assets/img/footer/mail-btn.svg" alt="" class="mail-button"></button>
+            </div>
             <input type="email-input">
             <div class="email-line"></div>
           </div>
 
-          
+
         </div>
 
-        
-    
+
       </div>
     </section>
-      
-        
-    
-  <footer class="bottom-site section-container--auto-height" style="background-color:  #262626;">
-    <div class="content-container">
-    <div class="wrap wrap__space-between padding--footer" style="color: rgba(255,255,255,0.5);">
-      <div class="wrap">
-        <p>© 2019 «Птицы и Пчёлы»</p>
+
+    <footer class="section-container-footer" style="background-color:  #262626;">
+      <div class="content-container">
+        <div class="footer">
+          <p class="footer-text__standart mg-bt-20">© 2019 «Птицы и Пчёлы»</p>
+          <div class="footer__links">
+            <a href="#" class="footer-text__standart footer-text__standart--underline mg-bt-20">Политика
+              конфеденциальности</a>
+            <a href="#" class="footer-text__standart footer-text__standart--underline">Статьи</a>
+          </div>
+        </div>
       </div>
-      <div class="wrap wrap">
-        <p class="margin--right-40">Политика конфеденциальности</p>
-        <p>Статьи</p>
-      </div>
-    </div>
-  </div>
-  </footer>
+    </footer>
 
     <div class="left-menu ">
       <section class="left-menu__box-1">
@@ -391,7 +494,6 @@
               alt="Детский клуб"></button>
           <a href="#" class="name-of-button">Караоке</a>
         </div>
-
 
         <div class="left-menu__button"><button class="button-wrap"><img src="./assets/img/left_menu_ico/ico3.svg"
               alt="Детский клуб" class="color-ico"><img src="./assets/img/left_menu_ico/ico3-w.svg"
@@ -438,8 +540,42 @@
         </div>
       </section>
 
-    </div>
 
+      <div class="left-menu-mobile">
+
+        <button id="close-menu" style="left: 0; width: 15px; margin-bottom: 20px;"><img
+            src="./assets/img/left_menu_mobile/cross.svg" alt=""></button>
+        <div class="left-menu-mobile__navi">
+          <a href="#" class="left-menu-mobile__navi-element">Меню/доставка</a>
+          <a href="#" class="left-menu-mobile__navi-element">Банкеты</a>
+          <a href="#" class="left-menu-mobile__navi-element">Свадьбы</a>
+          <a href="#" class="left-menu-mobile__navi-element">Для детей</a>
+          <a href="#" class="left-menu-mobile__navi-element">Фотоотчеты</a>
+          <a href="#" class="left-menu-mobile__navi-element">Торты</a>
+          <a href="#" class="left-menu-mobile__navi-element">Отзывы</a>
+          <a href="#" class="left-menu-mobile__navi-element">Контакты</a>
+        </div>
+        <div class="left-menu-mobile__line"></div>
+        <div class="left-menu-mobile__order">
+          <div class="phone-numbers" style="color: black; margin-bottom: 20px;">
+            <p class="phone-numbers__number--head">7 (925) 225-38-38</p>
+            <p class="phone-numbers__number--bottom">7 (495) 225-38-38</p>
+          </div>
+  
+          <div class="left-menu-mobile__button">
+            <a href="#" class="button-link" style="color: black">Забронировать</a>
+          </div>
+        </div>
+        <div class="left-menu-mobile__line"></div>
+        <div class="left-menu-mobile__logo">
+          <img src="./assets/img/left_menu_mobile/uds-game.svg" alt="">
+          <img src="./assets/img/left_menu_mobile/3d.svg" alt="">
+        </div>
+  
+      </div>
+
+    </div>
+    <script src="./assets/js/bb.js"></script>
 </body>
 
 </html>
