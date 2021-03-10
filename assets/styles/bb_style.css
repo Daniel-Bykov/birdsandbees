@@ -146,14 +146,6 @@ h5 {
   margin-right: 340px;
 }
 
-.pg-bt-120 {
-  padding-bottom: 120px;
-}
-
-.pg-footer {
-  padding: 20px 0px 20px 0px;
-}
-
 .left-menu {
   position: fixed;
   background: #ffffff;
@@ -222,7 +214,7 @@ h5 {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  margin-bottom: 25px;
+  margin-bottom: 56px;
 }
 
 .left-menu-mobile {
@@ -441,6 +433,12 @@ button {
   margin-bottom: 50px;
 }
 
+@media (max-width: 1290px) {
+  .header-section__photo-rep {
+    margin-bottom: 15px;
+  }
+}
+
 .button-link {
   display: flex;
   justify-content: center;
@@ -517,11 +515,15 @@ button {
 .section-container-main {
   height: 100vh;
   padding-top: 40px;
+  background-image: url("../img/backgrond.png");
+  background-size: cover;
 }
 
 @media (max-width: 1290px) {
   .section-container-main {
     padding-top: 25px;
+    background-size: cover;
+    background-position: center;
   }
 }
 
@@ -602,12 +604,14 @@ button {
   flex-wrap: wrap;
   width: 360px;
   justify-content: space-between;
+  margin-bottom: 30px;
 }
 
 @media (max-width: 1290px) {
   .place-info__actions {
     display: block;
     width: auto;
+    margin-bottom: 40px;
   }
 }
 
@@ -692,7 +696,7 @@ button {
   margin: 0 auto;
   padding: 0 20px;
   position: relative;
-  height: inherit;
+  height: -webkit-fill-available;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -706,6 +710,10 @@ button {
 }
 
 .content-wrapper-flex {
+  display: flex;
+}
+
+.content-wrapper-flex__header {
   display: flex;
 }
 
@@ -903,12 +911,9 @@ button {
   border-radius: 7px;
   height: 2px;
   position: relative;
-  bottom: -2px;
-  visibility: hidden;
-}
-
-.hall-pic {
-  width: 500px;
+  width: 30px;
+  top: 72px;
+  left: 0px;
 }
 
 .hall-gallery {
@@ -1089,9 +1094,13 @@ button {
 }
 
 .subscribe-input {
-  display: flex;
-  justify-content: space-between;
-  align-items: end;
+  position: relative;
+}
+
+.subscribe-input-button {
+  position: absolute;
+  right: 0px;
+  top: -20px;
 }
 
 .text-delivery {
@@ -1112,6 +1121,10 @@ button {
   color: #ffffff;
   opacity: 0.5;
   height: 100%;
+  top: 10px;
+  z-index: 1;
+  left: 10px;
+  position: absolute;
 }
 
 .text-black {
@@ -1205,9 +1218,14 @@ input[type="email-input"] {
   color: #ffffff;
   padding: 10px;
   background: #2d2d2d;
-  position: relative;
-  bottom: 26px;
+  position: absolute;
+  /* bottom: 26px; */
+  left: 0px;
   width: 223px;
+}
+
+input[type="email-input"]:focus ~ .text-gray {
+  transform: translateY(-25px);
 }
 
 .mail-button {
@@ -1218,7 +1236,7 @@ input[type="email-input"] {
 .email-line {
   border-bottom: 2px solid rgba(255, 255, 255, 0.1);
   position: relative;
-  bottom: 33px;
+  bottom: -30px;
 }
 
 .footer {
@@ -1226,7 +1244,6 @@ input[type="email-input"] {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 0px 20px 0px;
 }
 
 @media (max-width: 1290px) {
@@ -1266,4 +1283,44 @@ input[type="email-input"] {
     text-align: center;
     margin-right: 0px;
   }
+}
+
+#tabs .tab {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  color: #2d2d2d;
+  opacity: 0.5;
+  height: 70px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* display: inline-block;
+ 
+  padding: 5px 10px;
+  cursor: pointer;
+  position: relative;
+  z-index:5; */
+}
+
+#tabs .tab:focus {
+  color: #e3bf77;
+  opacity: 1;
+}
+
+#tabs .tabContent {
+  position: relative;
+  top: -1px;
+  z-index: 1;
+  padding: 10px;
+  border-radius: 0 0 3px 3px;
+  display: contents;
+}
+
+#tabs .hide {
+  display: none;
+}
+
+#tabs .show {
+  display: contents;
 }

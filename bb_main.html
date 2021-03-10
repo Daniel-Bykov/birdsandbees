@@ -47,8 +47,7 @@
 
     </div>
 
-    <div class="section-container-main"
-      style="background-image: url('./assets/img/backgrond.png');background-size: cover;">
+    <div class="section-container-main">
       <div class="content-container__header">
         <header class="header">
           <div class="header__top">
@@ -124,13 +123,15 @@
             <a href="#" class="button button--opacity">Подробнее</a>
           </div>
 
-
-        </section>
-        <div class="place-category">
           <nav class="place-category__navi">
             <button><img src="./assets/img/main_menu_ico/btn_navi.svg" alt=""></button>
             <button class="navi-right mg-rt-20"><img src="./assets/img/main_menu_ico/btn_navi.svg" alt=""></button>
           </nav>
+
+
+        </section>
+        <div class="place-category">
+  
 
           <div class="place-category__slider">
             <button class="category-selector mg-rt-30"><img src="./assets/img/main_menu_ico/bottom_navi/serv.svg"
@@ -228,118 +229,165 @@
 
     <section class="section-container">
       <div class="content-container">
+  <div id="tabs">
+      <div class="content-wrapper-flex-slider">
 
-        <header class="header-section__halls">
-          <h2 style="margin-bottom: 45px;">Наши залы</h2>
+      <div class="content-wrapper-column mg-rt-30">
+      <button class="tab">Все</button></div>
+      <div class="content-wrapper-column mg-rt-30">
+      <button class="tab">Банкетные</button></div>
+      <div class="content-wrapper-column mg-rt-30">
+      <button class="tab">Общие</button></div>
+      <div class="content-wrapper-column mg-rt-30">
+      <button class="tab">Индивидуальные</button></div>
+      <div class="content-wrapper-column mg-rt-30">
+      <button class="tab">Караоке</button></div>
+      </div>
 
+      <div class="tabContent">
+          <div class="hall-gallery">
+          <a id="banquet" href="" class="hall hall--active" style="background-image:url(./assets/img/hall/hall1.jpg)">
+              <p class="hall__guest-quantity" style="background-image: url(./assets/img/hall/guests\ quantity.svg);">ДО
+                160
+                гостей</p>
+              <p class="hall__name">Зал Большой банкетный</p>
+              <p class="hall__description ">Роскошный банкетный зал в мягком классическом дизайне.</p>
+            </a>
 
-          <div class="content-wrapper-column  mg-bt-15">
+            <a id="common" href="" class="hall" style="background-image:url(./assets/img/hall/hall3.jpg)">
+              <p class="hall__guest-quantity" style="background-image: url(./assets/img/hall/guests\ quantity.svg);">ДО
+                100
+                гостей</p>
+              <p class="hall__name">Зал Оранжерея</p>
+              <p class="hall__description ">Настоящая оранжерея с панорамными окнами, мягкими диванами.</p>
+  
+            </a>
+            <a id="common" href="" class="hall" style="background-image:url(./assets/img/hall/hall4.jpg)">
+              <p class="hall__guest-quantity" style="background-image: url(./assets/img/hall/guests\ quantity.svg);">ДО
+                100
+                гостей</p>
+              <p class="hall__name">Зал Гостиная</p>
+              <p class="hall__description ">Оригинальное по дизайну пространство со стеклянной стеной в сторону
+                бассейна.</p>
+            </a>
 
-            <div class="content-wrapper-flex-slider">
+            <a id="individual" href="" class="hall" style="background-image:url(./assets/img/hall/hall5.jpg)">
+              <p class="hall__guest-quantity" style="background-image: url(./assets/img/hall/guests\ quantity.svg);">ДО 30
+                гостей</p>
+              <p class="hall__name">Зал Лофт</p>
+              <p class="hall__description ">Зал в модном стиле лофт для индивидуальных мероприятий.</p>
+  
+            </a>
 
+            <a id="individual" href="" class="hall" style="background-image:url(./assets/img/hall/hall2.jpg)">
+              <p class="hall__guest-quantity" style="background-image: url(./assets/img/hall/guests\ quantity.svg);">ДО 12
+                гостей</p>
+              <p class="hall__name">Зал Золотая Комната</p>
+              <p class="hall__description ">Золотая комната в золотом убранстве и круглым столом на 12 человек.</p>
+  
+            </a>
 
-              <div class="content-wrapper-column mg-rt-30">
-                <button id="switch-all" class="hall-title">Все
-                </button>
-                <div class="scroll-marker"></div>
-              </div>
-
-
-              <div class="content-wrapper-column mg-rt-30">
-                <button id="switch-banquet" class="hall-title">Банкетные
-                </button>
-                <div class="scroll-marker"></div>
-              </div>
-
-
-              <div class="content-wrapper-column mg-rt-30">
-                <button id="switch-common" class="hall-title">Общие
-                </button>
-                <div class="scroll-marker"></div>
-              </div>
-
-
-              <div class="content-wrapper-column mg-rt-30">
-                <button id="switch-individual" class="hall-title">Индивидуальные
-                </button>
-                <div class="scroll-marker"></div>
-              </div>
-
-              <div class="content-wrapper-column mg-rt-30">
-                <button id="switch-caraoke" class="hall-title">Караоке
-                </button>
-                <div class="scroll-marker"></div>
-              </div>
-            </div>
+            <a id="caraoke" href="" class="hall" style="background-image:url(./assets/img/hall/hall6.jpg)">
+              <p class="hall__guest-quantity" style="background-image: url(./assets/img/hall/guests\ quantity.svg);">ДО 40
+                гостей</p>
+              <p class="hall__name">Караоке зал «Гнездо» </p>
+              <p class="hall__description ">Роскошный деревянный интерьер в стиле австрийского шале.</p>
+  
+            </a>
+            <a id="caraoke" href="" class="hall" style="background-image:url(./assets/img/hall/hall7.jpg)">
+              <p class="hall__guest-quantity" style="background-image: url(./assets/img/hall/guests\ quantity.svg);">ДО 20
+                гостей</p>
+              <p class="hall__name">Караоке зал «Дупло» </p>
+              <p class="hall__description ">Роскошный деревянный интерьер в стиле австрийского шале.</p>
+  
+            </a>
+            <a id="caraoke" href="" class="hall" style="background-image:url(./assets/img/hall/hall8.jpg)">
+              <p class="hall__guest-quantity" style="background-image: url(./assets/img/hall/guests\ quantity.svg);">ДО 50
+                гостей</p>
+              <p class="hall__name">Dance караоке-бар «Какаду»</p>
+              <p class="hall__description">Модный стильный фьюжен дизайн.</p>
+  
+            </a>
           </div>
-        </header>
+      </div>
+      <div class="tabContent">
+          
 
-        <div class="hall-gallery">
-          <a id="banquet" href="" class="hall" style="background-image:url(./assets/img/hall/hall1.jpg)">
-            <p class="hall__guest-quantity" style="background-image: url(./assets/img/hall/guests\ quantity.svg);">ДО
-              160
-              гостей</p>
-            <p class="hall__name">Зал Большой банкетный</p>
-            <p class="hall__description ">Роскошный банкетный зал в мягком классическом дизайне.</p>
-          </a>
+          <a id="banquet" href="" class="hall hall--active" style="background-image:url(./assets/img/hall/hall1.jpg)">
+              <p class="hall__guest-quantity" style="background-image: url(./assets/img/hall/guests\ quantity.svg);">ДО
+                160
+                гостей</p>
+              <p class="hall__name">Зал Большой банкетный</p>
+              <p class="hall__description ">Роскошный банкетный зал в мягком классическом дизайне.</p>
+            </a>
 
-          <a id="individual" href="" class="hall" style="background-image:url(./assets/img/hall/hall2.jpg)">
-            <p class="hall__guest-quantity" style="background-image: url(./assets/img/hall/guests\ quantity.svg);">ДО 12
-              гостей</p>
-            <p class="hall__name">Зал Золотая Комната</p>
-            <p class="hall__description ">Золотая комната в золотом убранстве и круглым столом на 12 человек.</p>
+      </div>
+      <div class="tabContent">
 
-          </a>
           <a id="common" href="" class="hall" style="background-image:url(./assets/img/hall/hall3.jpg)">
-            <p class="hall__guest-quantity" style="background-image: url(./assets/img/hall/guests\ quantity.svg);">ДО
-              100
-              гостей</p>
-            <p class="hall__name">Зал Оранжерея</p>
-            <p class="hall__description ">Настоящая оранжерея с панорамными окнами, мягкими диванами.</p>
+              <p class="hall__guest-quantity" style="background-image: url(./assets/img/hall/guests\ quantity.svg);">ДО
+                100
+                гостей</p>
+              <p class="hall__name">Зал Оранжерея</p>
+              <p class="hall__description ">Настоящая оранжерея с панорамными окнами, мягкими диванами.</p>
+  
+            </a>
+            <a id="common" href="" class="hall" style="background-image:url(./assets/img/hall/hall4.jpg)">
+              <p class="hall__guest-quantity" style="background-image: url(./assets/img/hall/guests\ quantity.svg);">ДО
+                100
+                гостей</p>
+              <p class="hall__name">Зал Гостиная</p>
+              <p class="hall__description ">Оригинальное по дизайну пространство со стеклянной стеной в сторону
+                бассейна.</p>
+            </a>
 
-          </a>
-          <a id="common" href="" class="hall" style="background-image:url(./assets/img/hall/hall4.jpg)">
-            <p class="hall__guest-quantity" style="background-image: url(./assets/img/hall/guests\ quantity.svg);">ДО
-              100
-              гостей</p>
-            <p class="hall__name">Зал Гостиная</p>
-            <p class="hall__description ">Оригинальное по дизайну пространство со стеклянной стеной в сторону
-              бассейна.</p>
-          </a>
-
+      </div>
+      <div class="tabContent">
           <a id="individual" href="" class="hall" style="background-image:url(./assets/img/hall/hall5.jpg)">
-            <p class="hall__guest-quantity" style="background-image: url(./assets/img/hall/guests\ quantity.svg);">ДО 30
-              гостей</p>
-            <p class="hall__name">Зал Лофт</p>
-            <p class="hall__description ">Зал в модном стиле лофт для индивидуальных мероприятий.</p>
+              <p class="hall__guest-quantity" style="background-image: url(./assets/img/hall/guests\ quantity.svg);">ДО 30
+                гостей</p>
+              <p class="hall__name">Зал Лофт</p>
+              <p class="hall__description ">Зал в модном стиле лофт для индивидуальных мероприятий.</p>
+  
+            </a>
 
-          </a>
+            <a id="individual" href="" class="hall" style="background-image:url(./assets/img/hall/hall2.jpg)">
+              <p class="hall__guest-quantity" style="background-image: url(./assets/img/hall/guests\ quantity.svg);">ДО 12
+                гостей</p>
+              <p class="hall__name">Зал Золотая Комната</p>
+              <p class="hall__description ">Золотая комната в золотом убранстве и круглым столом на 12 человек.</p>
+  
+            </a>
 
+
+      </div>
+      <div class="tabContent">
+          
           <a id="caraoke" href="" class="hall" style="background-image:url(./assets/img/hall/hall6.jpg)">
-            <p class="hall__guest-quantity" style="background-image: url(./assets/img/hall/guests\ quantity.svg);">ДО 40
-              гостей</p>
-            <p class="hall__name">Караоке зал «Гнездо» </p>
-            <p class="hall__description ">Роскошный деревянный интерьер в стиле австрийского шале.</p>
-
-          </a>
-          <a id="caraoke" href="" class="hall" style="background-image:url(./assets/img/hall/hall7.jpg)">
-            <p class="hall__guest-quantity" style="background-image: url(./assets/img/hall/guests\ quantity.svg);">ДО 20
-              гостей</p>
-            <p class="hall__name">Караоке зал «Дупло» </p>
-            <p class="hall__description ">Роскошный деревянный интерьер в стиле австрийского шале.</p>
-
-          </a>
-          <a id="caraoke" href="" class="hall" style="background-image:url(./assets/img/hall/hall8.jpg)">
-            <p class="hall__guest-quantity" style="background-image: url(./assets/img/hall/guests\ quantity.svg);">ДО 50
-              гостей</p>
-            <p class="hall__name">Dance караоке-бар «Какаду»</p>
-            <p class="hall__description">Модный стильный фьюжен дизайн.</p>
-
-          </a>
-        </div>
-
-    </section>
-
+              <p class="hall__guest-quantity" style="background-image: url(./assets/img/hall/guests\ quantity.svg);">ДО 40
+                гостей</p>
+              <p class="hall__name">Караоке зал «Гнездо» </p>
+              <p class="hall__description ">Роскошный деревянный интерьер в стиле австрийского шале.</p>
+  
+            </a>
+            <a id="caraoke" href="" class="hall" style="background-image:url(./assets/img/hall/hall7.jpg)">
+              <p class="hall__guest-quantity" style="background-image: url(./assets/img/hall/guests\ quantity.svg);">ДО 20
+                гостей</p>
+              <p class="hall__name">Караоке зал «Дупло» </p>
+              <p class="hall__description ">Роскошный деревянный интерьер в стиле австрийского шале.</p>
+  
+            </a>
+            <a id="caraoke" href="" class="hall" style="background-image:url(./assets/img/hall/hall8.jpg)">
+              <p class="hall__guest-quantity" style="background-image: url(./assets/img/hall/guests\ quantity.svg);">ДО 50
+                гостей</p>
+              <p class="hall__name">Dance караоке-бар «Какаду»</p>
+              <p class="hall__description">Модный стильный фьюжен дизайн.</p>
+  
+            </a>
+      </div>
+  </div>
+</div>
+</section>
 
     <section class="section-container-delivery">
 
@@ -456,11 +504,14 @@
             <p class="text-distribution color--white mg-bt-30">Подпишитесь на рассылку Птицы и Пчёлы и будьте в курсе
               всех новостей и событий</p>
             <div class="subscribe-input">
-              <p class="text-gray">E-mail:</p>
-              <button><img src="./assets/img/footer/mail-btn.svg" alt="" class="mail-button"></button>
-            </div>
-            <input type="email-input">
-            <div class="email-line"></div>
+                    <button class="subscribe-input-button"><img src="./assets/img/footer/mail-btn.svg" alt="" class="mail-button"></button>
+                    <input type="email-input">
+                    <p class="text-gray">E-mail:</p>
+                    <div class="email-line"></div>
+                  </div>
+            
+        
+           
           </div>
         </div>
       </div>

@@ -144,16 +144,6 @@ h5 {
   }
 }
 
-.pg {
-  &-bt-120 {
-    padding-bottom: 120px;
-  }
-
-  &-footer {
-    padding: 20px 0px 20px 0px;
-  }
-}
-
 .left-menu {
   position: fixed;
   background: #ffffff;
@@ -165,8 +155,8 @@ h5 {
   transition: 0.2s;
   overflow: hidden;
   display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+  flex-direction: column;
+  justify-content: space-between;
 
   &:hover {
     width: 300px;
@@ -220,7 +210,7 @@ h5 {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin-bottom: 25px;
+    margin-bottom: 56px;
 }
   }
 
@@ -433,6 +423,11 @@ button {
     display: flex;
     justify-content: space-between;
     margin-bottom: 50px;
+
+    @media (max-width: 1290px) {
+      margin-bottom: 15px;
+      
+    }
   }
 }
 
@@ -505,9 +500,13 @@ button {
   &-main {
     height: 100vh;
     padding-top: 40px;
+    background-image: url('../img/backgrond.png');
+    background-size: cover;
 
     @media (max-width: 1290px) {
       padding-top: 25px;
+      background-size: cover;
+      background-position: center;
     }
   }
 
@@ -581,9 +580,11 @@ button {
     flex-wrap: wrap;
     width: 360px;
     justify-content: space-between;
+    margin-bottom: 30px;
     @media (max-width: 1290px) {
       display: block;
       width: auto;
+      margin-bottom: 40px;
     }
   }
 
@@ -670,7 +671,7 @@ button {
   margin: 0 auto;
   padding: 0 20px;
   position: relative;
-  height: inherit;
+  height: -webkit-fill-available;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -687,6 +688,7 @@ button {
     display: flex;
 
     &__header{
+      display: flex;
       @media (max-width: 1290px) {
         display: none;
       }
@@ -696,6 +698,7 @@ button {
   &-flex-slider {
     display: flex;
     border-bottom: 2px solid rgba(0, 0, 0, 0.06);
+    
   }
 
   &-space-between {
@@ -875,6 +878,7 @@ button {
       transition: 0.5s linear;
     }
   }
+
 }
 
 .scroll-marker {
@@ -882,12 +886,9 @@ button {
   border-radius: 7px;
   height: 2px;
   position: relative;
-  bottom: -2px;
-  visibility: hidden;
-}
-
-.hall-pic {
-  width: 500px;
+  width: 30px;
+  top: 72px;
+  left: 0px;
 }
 
 .hall-gallery {
@@ -1046,9 +1047,13 @@ button {
 }
 
 .subscribe-input {
-  display: flex;
-  justify-content: space-between;
-  align-items: end;
+  position: relative;
+
+  &-button{
+    position: absolute;
+    right: 0px;
+    top: -20px;
+  }
 }
 
 .text {
@@ -1070,6 +1075,10 @@ button {
     color: #ffffff;
     opacity: 0.5;
     height: 100%;
+    top: 10px;
+    z-index: 1;
+    left: 10px;
+    position: absolute;
   }
 
   &-black {
@@ -1169,9 +1178,19 @@ input[type="email-input"] {
   color: #ffffff;
   padding: 10px;
   background: #2d2d2d;
-  position: relative;
-  bottom: 26px;
+  position: absolute;
+  /* bottom: 26px; */
+  left: 0px;
   width: 223px;
+  
+  &:focus {
+    & ~ .text-gray{
+      transform: translateY(-25px);
+      
+    }       
+  }
+
+
 }
 
 .mail-button {
@@ -1182,7 +1201,7 @@ input[type="email-input"] {
 .email-line {
   border-bottom: 2px solid rgba(255, 255, 255, 0.1);
   position: relative;
-  bottom: 33px;
+  bottom: -30px;
 }
 
 .footer {
@@ -1190,7 +1209,6 @@ input[type="email-input"] {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 0px 20px 0px;
 
   @media (max-width: 1290px) {
     flex-direction: column;
@@ -1226,4 +1244,45 @@ input[type="email-input"] {
       }
     }
   }
+}
+
+#tabs .tab {
+    
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  color: #2d2d2d;
+  opacity: 0.5;
+  height: 70px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+    
+  /* display: inline-block;
+ 
+  padding: 5px 10px;
+  cursor: pointer;
+  position: relative;
+  z-index:5; */
+}
+
+
+#tabs .tab:focus {
+  color: #e3bf77;
+  opacity: 1;
+}
+
+#tabs .tabContent {
+  position: relative;
+  top: -1px;
+  z-index:1;
+  padding: 10px;
+  border-radius: 0 0 3px 3px;
+  display: contents;
+}
+#tabs .hide {
+  display: none;
+}
+#tabs .show {
+  display: contents;
 }
