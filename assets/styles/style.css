@@ -561,8 +561,6 @@ button {
 
 .section-container-main {
   height: 100vh;
-  padding-top: 40px;
-  background-image: url("../img/backgrond.png");
   background-size: cover;
   transition: 0.1s linear;
   background-color: #E3BF77;
@@ -618,6 +616,7 @@ button {
   overflow: visible;
   overflow: hidden;
   z-index: 0;
+  margin-top: 200px;
 }
 
 .place-info__name {
@@ -756,21 +755,34 @@ button {
 }
 
 .content-container__header {
-  max-width: 1180px;
+  width: 1180px;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 0px 20px;
   position: relative;
   height: -webkit-fill-available;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   min-height: inherit;
 }
 
 @media (max-width: 1290px) {
   .content-container__header {
     padding: 0 15px;
+    width: auto;
   }
+}
+
+.content-container__header-back {
+  width: 1180px;
+  margin: 0 auto;
+  padding: 0px 20px;
+  position: relative;
+  height: -webkit-fill-available;
+  display: flex;
+  flex-direction: column;
+  min-height: inherit;
+  height: 100%;
+  justify-content: space-between;
 }
 
 .content-wrapper-flex {
@@ -1233,6 +1245,24 @@ button {
   flex-shrink: 0;
 }
 
+.flex-navi-main {
+  position: absolute;
+  display: flex;
+  z-index: 2;
+  width: calc(100vw - 117px);
+  padding-top: 45px;
+  height: 100%;
+}
+
+.flex-navi-main2 {
+  position: absolute;
+  display: flex;
+  z-index: 2;
+  width: calc(100vw - 117px);
+  padding-top: 45px;
+  bottom: 0;
+}
+
 .call-order-text {
   font-weight: 600;
   font-size: 14px;
@@ -1404,4 +1434,20 @@ input[type="text"]:focus ~ .text-gray {
     height: 14px;
     background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='21' height='14' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath fill-rule='evenodd' clip-rule='evenodd' d='M0 1a1 1 0 011-1h19a1 1 0 110 2H1a1 1 0 01-1-1zm0 6a1 1 0 011-1h19a1 1 0 110 2H1a1 1 0 01-1-1zm1 5a1 1 0 100 2h19a1 1 0 100-2H1z' fill='%23fff'/%3e%3c/svg%3e");
   }
+}
+
+.banner {
+  position: relative;
+  z-index: 0;
+}
+
+.slider-background {
+  width: 100%;
+  position: absolute;
+  height: 100%;
+  object-fit: cover;
+}
+
+.am {
+  margin: 0 auto;
 }
