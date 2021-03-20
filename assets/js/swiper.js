@@ -1,26 +1,4 @@
 
-// -----------------------Function for change background 
-
-document.addEventListener('DOMContentLoaded', function () {
-
-  document.querySelectorAll('.swiper-pagination-main, .place-category__navi').forEach(item => {
-
-    item.addEventListener('click', function () {
-
-      let containerBackground = document.querySelector('.section-container-main'),
-        activeSlide = document.querySelector('.swiper-pagination-bullet-active'),
-        slider = document.querySelector('.swiper-pagination-main'),
-        activeIndex = Array.from(slider.children).indexOf(activeSlide);
-
-      document.getElementById("section-container-main").className = "section-container-main";
-
-      containerBackground.classList.add('background-img' + activeIndex);
-    })
-  });
-
-});
-
-
 // -----------------------Swiper for Events 
 
 const swiper = new Swiper('.swiper-container', {
@@ -72,7 +50,7 @@ var swiperCustom = new Swiper('.swiper-container-main', {
     el: '.swiper-pagination-main',
     clickable: true,
     renderBullet: function (index, className) {
-      return '<div class="' + 'background-bullet' + (index + 1) + ' ' + className + '">' + '</div>';
+      return '<div class="' + 'background-bullet background-bullet' + (index + 1) + ' ' + className + '">' + '</div>';
     },
   },
 
