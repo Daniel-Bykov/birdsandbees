@@ -1,12 +1,12 @@
-document.addEventListener('DOMContentLoaded', function () {
+document.addEventListener('DOMContentLoaded', function () { 
 
     // Tabs for Halls Gallery -------------------------------------------------------
 
-    let tabs = (function () {
-        let tabsControl = document.querySelectorAll('.tab-control'),
-            tabsContent = document.querySelectorAll('.tab-content'),
+    let tabs = (function () { 
+        let tabsControl = document.querySelectorAll('.tab-control'), 
+            tabsContent = document.querySelectorAll('.tab-content'), 
             activeTab = tabsControl[0],
-            activeIndex = 0,
+            activeIndex = 0, 
             carret = document.querySelector('.tab-controls__carret'),
 
             init = () => {
@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 let offset = 0;
 
                 [...tabsControl].slice(0, activeIndex).forEach(i => {
-                    offset += i.offsetWidth + +window.getComputedStyle(i).marginRight.match(/\d/g).join('')
+                    offset += i.offsetWidth + +window.getComputedStyle(i).marginRight.match(/\d/g).join('') 
                 })
 
                 carret.style.transform = `translate(${offset}px)`
@@ -55,7 +55,5 @@ document.addEventListener('DOMContentLoaded', function () {
             init
         }
     })();
-
     tabs.init();
-
 });

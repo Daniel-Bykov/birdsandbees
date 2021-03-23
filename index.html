@@ -17,11 +17,13 @@
 <body>
 
   <div class="main-container">
-    <button id="mobile-menu-active" class="mobile-menu-button"> </button>
+    <div class="mobile-menu-button-wrap">
+
+      <div class="mobile-menu-button-wrap-2"><div id="mobile-menu-active" class="mobile-menu-button"> </div></div>
+
+    </div>
     <div class="left-menu-mobile-box">
       <div class="left-menu-mobile-content">
-        <!-- <button class="close-menu" style="left: 0; width: 15px; margin-bottom: 20px;"><img
-            src="./assets/img/left_menu_mobile/cross.svg" alt=""></button> -->
         <div class="left-menu-mobile-content__navi">
           <a href="#" class="left-menu-mobile-content__navi-element">Меню/доставка</a>
           <a href="#" class="left-menu-mobile-content__navi-element">Банкеты</a>
@@ -70,7 +72,6 @@
               </div>
 
               <div class="header__left-menu">
-                <!-- <button id="mobile-menu-active" class="mobile-menu-active"> </button> -->
               </div>
 
               <div class="header__logotype">
@@ -750,13 +751,11 @@
           </div>
 
           <div class="pre-footer__subscribe ">
-            <p class="text-distribution color--white mg-bt-30">Подпишитесь на рассылку Птицы и Пчёлы и будьте в курсе
+            <p class="text-distribution color--white mg-bt-50">Подпишитесь на рассылку Птицы и Пчёлы и будьте в курсе
               всех новостей и событий</p>
             <div class="subscribe-input">
-              <!-- <button class="subscribe-input-button"><img src="./assets/img/footer/mail-btn.svg" alt=""
-                  class="mail-button"></button> -->
-              <input type="text">
-               <!-- <p class="text-gray">E-mail:</p> -->
+              <label class="raz"><input type="email" placeholder="&nbsp;"><span class="text-gray">E-mail:</span></label>
+              <button class="subscribe-input-button"></button>
               <div class="email-line"></div>
             </div>
 
