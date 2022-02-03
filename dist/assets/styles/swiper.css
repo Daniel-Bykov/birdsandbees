@@ -13,6 +13,12 @@
   display: none;
 }
 
+.swiper-pagination-mobile{
+  display: flex;
+  justify-content: center;
+
+}
+
 .swiper-slide {
   background: #fff0;
 }
