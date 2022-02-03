@@ -13,7 +13,7 @@ let project_folder = "dist",
 
     src: {
       html: [source_folder + "/*.html", "!" + source_folder + "/~*.html"],
-      css: [source_folder + "/assets/styles/style.scss", source_folder + "/assets/styles/reset.css", source_folder + "/assets/styles/swiper.css"],
+      css: [source_folder + "/assets/styles/style.scss", source_folder + "/assets/styles/reset.scss", source_folder + "/assets/styles/swiper.scss"],
       js: [source_folder + "/assets/js/script.js",  source_folder + "/assets/js/*.js"],
       img: source_folder + "/assets/img/**/*.{jpg,png,svg,ico,webp}",
       fonts: source_folder + "/assets/fonts/*.otf"},
@@ -85,7 +85,6 @@ function html() {
 function js() {
   return src(path.src.js)
     .pipe(fileinclude())
-    .pipe(dest(path.build.js))
     .pipe(uglify())
     .pipe(rename({
       extname: ".min.js"
@@ -121,10 +120,6 @@ function sassComp() {
         cascede: true
       })
     )
-
-    .pipe(dest(path.build.css))
-
-    .pipe(clean_css())
 
     .pipe(rename({
       extname: ".min.css"
